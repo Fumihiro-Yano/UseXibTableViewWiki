@@ -16,15 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var navigationController: UINavigationController?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        navigationController = UINavigationController()
         let viewController: ViewController = ViewController()
         
+        navigationController = UINavigationController(rootViewController: viewController)
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         //rootViewControllerにviewControllerを指定
-        self.window!.rootViewController = viewController
+        self.window!.rootViewController = navigationController
         
-        self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
         return true
     }
