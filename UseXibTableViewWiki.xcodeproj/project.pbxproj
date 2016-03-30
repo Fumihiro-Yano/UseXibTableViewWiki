@@ -13,6 +13,11 @@
 		E7B30EE01CABF6C50063056F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B30EDE1CABF6C50063056F /* LaunchScreen.storyboard */; };
 		E7B30EEB1CABF6C50063056F /* UseXibTableViewWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B30EEA1CABF6C50063056F /* UseXibTableViewWikiTests.swift */; };
 		E7B30EF61CABF6C50063056F /* UseXibTableViewWikiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B30EF51CABF6C50063056F /* UseXibTableViewWikiUITests.swift */; };
+		E7B30F041CABF9190063056F /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B30F031CABF9190063056F /* TestTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E7B30F061CABF9AB0063056F /* TestTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B30F051CABF9AB0063056F /* TestTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E7B30F081CABFA8F0063056F /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B30F071CABFA8F0063056F /* TestTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E7B30F0A1CABFAD40063056F /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B30F091CABFAD40063056F /* TestTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		E7B30F0D1CAC028B0063056F /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7B30F0C1CAC028B0063056F /* sample.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		E7B30EF11CABF6C50063056F /* UseXibTableViewWikiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseXibTableViewWikiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B30EF51CABF6C50063056F /* UseXibTableViewWikiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseXibTableViewWikiUITests.swift; sourceTree = "<group>"; };
 		E7B30EF71CABF6C50063056F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B30F031CABF9190063056F /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		E7B30F051CABF9AB0063056F /* TestTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewController.xib; sourceTree = "<group>"; };
+		E7B30F071CABFA8F0063056F /* TestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		E7B30F091CABFAD40063056F /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		E7B30F0C1CAC028B0063056F /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +105,16 @@
 		E7B30ED41CABF6C50063056F /* UseXibTableViewWiki */ = {
 			isa = PBXGroup;
 			children = (
+				E7B30F0B1CAC01B10063056F /* images */,
 				E7B30ED51CABF6C50063056F /* AppDelegate.swift */,
 				E7B30ED71CABF6C50063056F /* ViewController.swift */,
 				E7B30EDC1CABF6C50063056F /* Assets.xcassets */,
 				E7B30EDE1CABF6C50063056F /* LaunchScreen.storyboard */,
 				E7B30EE11CABF6C50063056F /* Info.plist */,
+				E7B30F031CABF9190063056F /* TestTableViewController.swift */,
+				E7B30F051CABF9AB0063056F /* TestTableViewController.xib */,
+				E7B30F071CABFA8F0063056F /* TestTableViewCell.swift */,
+				E7B30F091CABFAD40063056F /* TestTableViewCell.xib */,
 			);
 			path = UseXibTableViewWiki;
 			sourceTree = "<group>";
@@ -120,6 +135,14 @@
 				E7B30EF71CABF6C50063056F /* Info.plist */,
 			);
 			path = UseXibTableViewWikiUITests;
+			sourceTree = "<group>";
+		};
+		E7B30F0B1CAC01B10063056F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E7B30F0C1CAC028B0063056F /* sample.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +251,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B30F061CABF9AB0063056F /* TestTableViewController.xib in Resources */,
+				E7B30F0A1CABFAD40063056F /* TestTableViewCell.xib in Resources */,
 				E7B30EE01CABF6C50063056F /* LaunchScreen.storyboard in Resources */,
 				E7B30EDD1CABF6C50063056F /* Assets.xcassets in Resources */,
+				E7B30F0D1CAC028B0063056F /* sample.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B30ED81CABF6C50063056F /* ViewController.swift in Sources */,
+				E7B30F081CABFA8F0063056F /* TestTableViewCell.swift in Sources */,
 				E7B30ED61CABF6C50063056F /* AppDelegate.swift in Sources */,
+				E7B30F041CABF9190063056F /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
